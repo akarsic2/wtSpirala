@@ -1,0 +1,27 @@
+{
+  "name": "spirala4",
+  "version": "1.0.0",
+  "description": "spirala4",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bcrypt-nodejs": "^0.0.3",
+    "bcrypt-pbkdf": "^1.0.1",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
+    "sequelize": "^4.32.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "heroku"
+  ],
+  "author": "amila",
+  "license": "ISC"
+}

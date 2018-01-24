@@ -1,0 +1,13 @@
+#registracija{
+	border: solid 1px;
+	background-color: #B992A6;
+	padding: 2em;
+	border-radius: 5px;
+	width: 10em;
+}
+
+#naziv2{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}

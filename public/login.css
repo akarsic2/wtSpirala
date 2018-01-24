@@ -1,0 +1,90 @@
+body{
+	
+background: -webkit-linear-gradient(90deg, rgba(128,128,128,1) 0%, rgba(255,255,255,1) 9%, rgba(255,255,255,1) 18%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 44%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 83%, rgba(254,212,255,1) 93%, rgba(128,128,128,1) 100%);
+}
+
+.sredina{
+	margin-top: 6em;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.sredina-item--top {
+  align-self: flex-start;
+}
+
+.sredina-item {
+  max-width: 50%;
+}
+
+#login{
+	float:left;
+	border:solid 1px;
+	border-radius: 5px;
+	background-color: #B992A6;
+	padding: 2em;
+	width: 10em;
+}
+
+#registracija{
+	float:right;
+	border: solid 1px;
+	background-color: #B992A6;
+	padding: 2em;
+	border-radius: 5px;
+	width: 10em;
+}
+
+#naziv1{
+	font-size: 25px;
+	text-align: center;
+	margin-top: 5px;
+	color: white;
+}
+
+#naziv2{
+	font-size: 25px;
+	text-align: center;
+	margin-top: 5px;
+	color: white;
+	margin-bottom: 5px;
+}
+
+#studentform{
+	margin-top:-225px;
+}
+
+
+
+#nastavnik, #student{
+	margin-bottom: 5px;
+}
+
+#email, #password{
+	border-radius: 4px;
+}
+
+#nkorisnickoime, #npassword1, #npassword2, #nfakultetskiemail, #nmaxbrgrupa, #nregex, #ntrenutnisemestar, #ntrenutnaakgodina,
+#simeiprezime, #sindeks, #sbrojgrupe, #sakgod, #spassword1, #spassword2, #sbitbucketurl, #sbitbucketssh, #snazivrepozitorija, #username
+{
+	margin-top: 4px;
+	border-radius: 4px;
+}
+
+#nastdiv, #studdiv{
+	font-size: 13px;
+}
+
+
+@media (max-width: 700px){
+
+
+	.sredina {
+	  width:95%;
+	  flex-direction: column;
+	  margin-top: 40%;
+	  margin-left: 5%;
+	}
+
+}

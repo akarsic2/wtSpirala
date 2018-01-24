@@ -1,0 +1,16 @@
+
+ ###### 
+Svaki zadatak je urađen. Kod je čitljiv i jasan. HTML je validiran. U prvom zadatku validacija za akademsku godinu nije ispravna, provjerava samo da li je prva godina jednaka trenutnoj, ali ne da li je druga godina za 1 veća, zatim url i ssh za username primaju svaki string, čak i prazan string, mislim da se i to trebalo validirati, za ime i prezime ne prima stringove sa -. Greške su mogle biti odvojene novim redom, a ne tačka-zarezom, izgledalo bi preglednije. U posljednjem zadatku, bilo bi dobro da je red koji se pomjera nekako označen(npr. drugom bojom), ali to nije bilo naznačeno u zadatku, pa je zadatak i ovako tačan.
+
+ ###### 
+Validacija, ispis poruka, ciscenje poruka ok uradjeno. Mada u validacija.js mogle su se funkcije gore definirati i implementirati a u returnu da se samo vrate nazivi funkcija 
+funkcijaA : _funkcijaA,
+funkcijaB : _funkcijaB
+a implementacije se izvrse prije returna module-a. Onako kako je u postavci spirale bilo, nije zato sto je takva postavka, nego sto je to general convetion pisanja koda u JS.  Kod unosa komentara nije moguce da se spasi komentar, nestane kada se promjeni redoslijed. Nije spasen u objekat, to bi bilo fino da radi. Bolja implementacija bi bila crtanje divova i html elemenata koristeci js. Tako ce se lakse dodavati novi elementi ako se prosiri na 10 repozitorija, ti ces morati dodati 5 novih copy pasteova u htmlu. Lakse je da se nekom petljom iscrtaju za bilo koji broj repozitorija koje dobijes.
+
+
+
+ ###### 
+svi zadaci su uradjeni, forme se isravno pojavaljuju, regexi ispravno napisani, greske se ispisuju iako se ne unese nista u polje, ukoliko se izbrise nepravilno unesen tekst greska ostaje ispisana, redovi na stanici unoskomentara se ne mijenjaju pravilno, odnosno izgube se podaci sa polja kada se zamijeni neki od redova
+ ###### 
+ImeIPrezime, Indeks, Password, Potvrda passworda, Bitbucket URL, Naziv repozitorija i Fakultetski mail su uspješno odradene, koristeci uglavnom Regex. Kod je citljiv i može se lako snaci. Zadatak 4 je u potpunosti uraden, u skladu sa postavkom zadatka. Kod akademske godine, validacija prolazi ako se unese 2016/2017. godina ili 2017/2018. godina. U polje za unos Bitbucket SSH, validacija prolazi i bez unesenog username-a.

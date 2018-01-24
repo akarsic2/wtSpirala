@@ -1,0 +1,77 @@
+body{
+	/*background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(255,255,255,1) 18%, rgba(255,255,255,1) 36%, rgba(254,212,255,1) 44%, rgba(192,192,192,1) 51%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 83%, rgba(254,212,255,1) 93%, rgba(128,128,128,1) 100%);
+	*/
+	background: -webkit-linear-gradient(90deg, rgba(128,128,128,1) 0%, rgba(255,255,255,1) 9%, rgba(255,255,255,1) 18%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 44%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 83%, rgba(254,212,255,1) 93%, rgba(128,128,128,1) 100%);
+
+}
+
+ html{
+	height: 100%;
+}
+
+#prvi{
+	margin-left: 200px;
+}
+#s1, #s2, #s3, #s4{
+	width: 10em;
+	margin: 1em;
+	height: 3em;
+}
+
+#potvrdi{
+	position: relative;
+	width:60px;
+	margin-left: -30px;
+	left:50%;
+}
+
+#dugmad{
+	position: relative;
+	width: 41em;
+	margin-left: -20.5em;
+	left: 50%;
+	margin-top: 4em;
+}
+
+#tabela td, tr, th{
+	border: 1px solid;
+	text-align: center;
+}
+
+#tabela{
+	border-collapse: collapse;
+	width: 70%;
+	position: relative;
+	margin-left: -35%;
+	left:50%;
+	margin-top: 1%;
+	height: 15em;
+}
+
+#tabela td,th{
+	width: 8em;
+}
+
+
+
+
+
+
+@media (max-width: 700px){
+
+
+	
+	
+	#dugmad{
+		width: 10em;
+		margin-left: -3em;
+		left:50%;
+
+	}
+
+	#s1, #s2, #s3, #s4{
+		margin:0;
+	}
+
+
+}

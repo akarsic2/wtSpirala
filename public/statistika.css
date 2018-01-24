@@ -1,0 +1,196 @@
+body{
+	background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 9%, rgba(255,255,255,1) 18%, rgba(255,255,255,1) 36%, rgba(254,212,255,1) 44%, rgba(192,192,192,1) 51%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 83%, rgba(254,212,255,1) 93%, rgba(128,128,128,1) 100%);
+
+
+}
+
+
+	#naslov{
+	padding-left: 5%;
+	font-size: 30px;
+	font-family: Arial;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#drugi{
+	width: 94%;
+	border-bottom: solid 1px;
+	margin-left: 3%;
+}
+
+
+#lijevo{
+	text-align: left;
+	font-size: 20px;
+	padding-left: 2%;
+	font-family: Arial;
+}
+
+#desno{
+	text-align: right;
+	padding-right: 10%;
+	font-family: Arial;
+}
+
+.redd{
+	
+	width:80%;
+	margin-left: 10%;
+	height: 280px;
+}
+
+.kolona1, .kolona2{
+	margin: 1%;
+	display: inline-block;
+	float: left;
+
+	
+	
+}
+
+.kolona1{
+	width: 25%;
+	padding-left: 0;
+	font-family: Arial;
+}
+
+.kolona2{
+	width: 70%;
+	padding-top: 10px;
+}
+
+#tabela{
+	border-collapse: collapse;
+	width: 100%;
+	margin-left: 0;
+	margin-top: 10px;
+}
+
+#tabela td, tr, th{
+	border: 1px solid;
+
+}
+
+
+
+
+#tabela th, #s1, #s2, #s3, #s4, #s5{
+	background-color: #ddd;
+	text-align: center;
+}
+
+#komentari{
+	border-top: solid 1px;
+	font-size: 30px;
+	font-family: Arial;
+	text-align: center;
+	padding-top: 2%;
+}
+
+#spirala1{
+	width: 94%;
+	border-bottom: solid 1px;
+	margin-left: 3%;
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+.red{
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	width:80%;
+	margin-left: 10%;
+	box-sizing: border-box;
+	margin-bottom: 80px;
+}
+
+.kolona{
+	margin: 1%;
+	display: inline-block;
+	float: left;
+	border: 1px solid;
+}
+
+.kolona.dva{
+	width: 30%;
+	overflow-y: scroll;
+	height: 100px;
+}
+
+#dugmadd{
+	position: relative;
+	width: 220px;
+	margin-left: -110px;
+	left: 50%;
+	margin-bottom: 50px;
+	padding-top: 10px;
+}
+
+#prije, #prvib, #drugib, #trecib, #cetvrtib, #poslije{
+	background-color: #880E4F;
+	border-color:black;
+	border:solid 1px;
+	width: 26px;
+	margin: 1px;
+	border-radius: 3px;
+	
+}
+
+#prije:active, #prvib:active, #drugib:active, #trecib:active, #cetvrtib:active, #poslije:active{
+	background-color: #FFECB3;
+}
+
+
+@media (max-width: 700px){
+	
+
+	#naslov{
+		margin-top:6em;
+	}
+
+	.kolona1, .kolona2{
+		width: 100%;
+		border: none;
+
+	}
+	
+
+	.redd{
+		display: grid;
+		margin-top: 0;
+		margin-bottom: 0;
+		width: 80%;
+		height: 400px;
+	}
+
+	.kolona2{
+		padding-left: 10%;
+
+	}
+
+	#tabela{
+		margin:0;
+		width: 80%;
+	}
+
+	.kolona.dva{
+		width: 100%;
+	}
+	
+
+	.red{
+		display: grid;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		width: 60%;
+		margin-left: 20%;
+
+	}
+
+	
+}

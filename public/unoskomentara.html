@@ -1,0 +1,61 @@
+<div id="prvi">
+	<p>Spirala</p>
+	<input type="number" name="spirala" id="spirala" min="1" max="4">
+	<p>Vaš index</p>
+	<input type="text" name="index" id="index">
+
+</div>
+
+
+<table id="tabela">
+	<tr>
+		<th id="sifra">Šifra studenta</th>
+		<th id="tekst">Tekst</th>
+
+	</tr>
+	<tr>
+		<td id="sifra1">A</td>
+		<td id="tekst1"> <input type="text" name="itekst1" id="itekst1"> </td>
+		<td>
+			<button type="button" id="up1" > <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  </button>
+			<button type="button" id="down1" onclick="funkcijaDown(this);"> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> </button>
+		</td>
+	</tr>
+	<tr>
+		<td id="sifra2">B</td>
+		<td id="tekst2"> <input type="text" name="itekst2" id="itekst2"> </td>
+		<td>
+			<button type="button" id="up2" onclick="funkcijaUp(this);"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+			<button type="button" id="down2" onclick="funkcijaDown(this);"> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> </button>
+		</td>
+	</tr>
+	<tr>
+		<td id="sifra3">C</td>
+		<td id="tekst3"> <input type="text" name="itekst3" id="itekst3"> </td>
+		<td>
+			<button type="button" id="up3" onclick="funkcijaUp(this);"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+			<button type="button" id="down3" onclick="funkcijaDown(this);"> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> </button>
+		</td>
+	</tr>
+	<tr>
+		<td id="sifra4">D</td>
+		<td id="tekst4"> <input type="text" name="itekst4" id="itekst4"> </td>
+		<td>
+			<button type="button" id="up4" onclick="funkcijaUp(this);"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+			<button type="button" id="down4" onclick="funkcijaDown(this);"> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> </button>
+		</td>
+	</tr>
+	<tr>
+		<td id="sifra5">E</td>
+		<td id="tekst5"> <input type="text" name="itekst5" id="itekst5"> </td>
+		<td>
+			<button type="button" id="up5" onclick="funkcijaUp(this);"> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+			<button type="button" id="down5"> <i class="fa fa-thumbs-o-down" aria-hidden="true"></i> </button>
+		</td>
+	</tr>
+
+
+</table>
+</br> </br>
+<button type="button" id="potvrdi" onclick='KreirajFajl.kreirajKomentar(spirala.value, index.value, [{"sifra_studenta":"A","tekst":itekst1.value,"ocjena":0},{"sifra_studenta":"B", "tekst":itekst2.value,"ocjena":1},{"sifra_studenta":"C", "tekst":itekst3.value,"ocjena":2}, {"sifra_studenta":"D", "tekst":itekst4.value,"ocjena":3},{"sifra_studenta":"E", "tekst":itekst5.value,"ocjena":4}], function(err,data){}) '>Potvrdi</button>
+

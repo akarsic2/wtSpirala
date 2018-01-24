@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<script src="validacija.js"></script>
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<meta charset="UTF-8" >
+		
+		<title>Projekat</title>
+		<link rel="stylesheet" type="text/css" href="registrujNastavnika.css">
+	</head>
+	<body>
+
+			<form id="registracija">
+				<p id="naziv2"> Registracija </p>
+				Email: <br>
+				<input type="text" name="email" id="email" onchange="validirajFakultetski(email.value)">
+				<br>
+				Index: <br>
+				<input type="text" name="index" id="index" onchange="validirajIndex(index.value);">
+				<br>
+				Nastavna grupa: <br>
+				<select name="grupa" id="grupa" onchange="validirajGrupu(grupa.value);">
+					<option value="1">Prva</option>
+					<option value="2">Druga</option>
+					<option value="3">Treca</option>
+					<option value="4">Cetvrta</option>
+				</select>
+				<br>
+				Password: <br>
+				<input type="text" name="password1" id="password1" onchange="validirajPassword(password1.value)"> 
+				<br>
+				Password: <br>
+				<input type="text" name="password2">
+			</form>
+		
+	</body>
+
+</html>

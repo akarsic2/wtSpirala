@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zadatak 1</title>
+    <script src="kreirajFajl.js"></script>
+    <script src="bitbucketApi.js"></script>
+</head>
+<body>
+        <p>Index</p>
+        <input type="text" name="index" id="index"  >
+        </br>
+        <p>Spirala</p>
+        <input name="spirala" type="number" id="spirala">
+        </br></br>
+        <button type="button" onclick="KreirajFajl.kreirajIzvjestaj(spirala.value,index.value, function(err,data){})">Generisi izvjestaj</button>
+        <button type="button" onclick="KreirajFajl.kreirajBodove(spirala.value,index.value, function(err,data){})">Generisi bodove</button>
+	</form>
+</body>
+</html>

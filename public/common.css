@@ -1,0 +1,66 @@
+#logo{
+	height: 3em;
+	float:left;
+	background-image: url("https://d1qhuz9ahqnrhh.cloudfront.net/wp-content/uploads/2011/09/Logo-Talk-welcome-32.jpg");
+}
+
+nav{
+	height: 3em;
+	position: relative;
+	width: 70em;
+	margin-left: -35em;
+	left:50%;
+	margin-top: 1em;
+	border-bottom: 3px solid black;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li a{
+	float: left;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+	color: black;
+	padding: 0px 40px;
+	text-align: center;
+	line-height: 3em;
+	height: 3em;
+
+}
+
+nav ul li a:hover{
+	background-color: white;
+	color:blue;
+	border-radius: 5px;
+}
+
+
+@media (max-width: 700px){
+
+
+	#logo{
+		float: none;
+		margin-left: 3em;
+	}
+
+	nav ul li a{
+	float: left;
+	text-decoration: initial;
+	width: 8em;
+	}
+
+	nav{
+		border-bottom: none;
+		width: 16em;
+		margin-left: -8em;
+		left: 50%;
+		
+	}
+
+	nav ul li a:hover{
+	background-color: #B992A6;
+	}
+}

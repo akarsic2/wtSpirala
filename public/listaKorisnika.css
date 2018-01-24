@@ -1,0 +1,10 @@
+#lijevi{
+    float: left;
+    padding-right:20px;
+}
+
+#vanjski{
+    position: relative;
+    margin-left: 40px;
+    margin-top: 40px;
+}

@@ -1,0 +1,65 @@
+<div id="main">
+	
+	<nav>
+		<ul class="nav" id="nav">
+			<li><img id="logo" src="https://d1qhuz9ahqnrhh.cloudfront.net/wp-content/uploads/2011/09/Logo-Talk-welcome-32.jpg" alt="error"> </li>
+			
+			<li><a onclick="prikaziLogin()">Login</a></li>
+			<li><a href="http://google.com">Link</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="sredina">
+	<form id="login">
+		<p id="naziv1"> Login </p>
+		
+		Email: <br>
+		<input type="text" id="username">
+		<br>
+		Password: <br>
+		<input type="text" id="password"> <br> <br>
+		<button type="button" id="loginBaza" onClick="logujSe()">Login</button>
+	</form>
+
+	<div id="registracija">
+		<p id="naziv2"> Registracija </p>
+		
+		<form action="http://localhost:3000/registracija" method="POST">
+			<input type="button" id="nastavnik" value="Nastavnika" onclick="regNastavnika(); Poruke.postaviIdDiva('nastdiv')">
+			<input type="button" id="student" value="Studenta" onclick="regStudenta(); Poruke.postaviIdDiva('studdiv')">
+				
+			<div id="nastavnikform">
+					<input type="text" name="nimeiprezime" id="nimeiprezime" placeholder=" Ime i prezime" onblur="Pomocni.validirajImeiPrezime(nimeiprezime.value);">
+					<input type="text" name="nkorisnickoime" id="nkorisnickoime" placeholder=" Korisniko ime">
+					<input type="text" name="npassword1" id="npassword1" placeholder=" Password" onblur="Pomocni.validirajPassword(npassword1.value);">
+					<input type="text" name="npassword2" id="npassword2" placeholder=" Potvrda passworda" onblur="Pomocni.validirajPotvrdu(npassword1.value, npassword2.value);">
+					<input type="text" name="nfakultetskiemail" id="nfakultetskiemail" placeholder=" Fakultetski email" onblur="Pomocni.validirajFakultetski(nfakultetskiemail.value);">
+					<input type="text" name="nmaxbrgrupa" id="nmaxbrgrupa" placeholder=" Maksimalan broj grupa" onblur="Pomocni.postaviMaxGrupa(parseInt(nmaxbrgrupa.value));">
+					<input type="text" name="nregex" id="nregex" placeholder=" Regex za validaciju repoa">
+					<input type="text" name="ntrenutnisemestar" id="ntrenutnisemestar" placeholder=" Trenutni semestar" onblur="Pomocni.postaviTrenSemestar(ntrenutnisemestar.value);">
+					<input type="text" name="ntrenutnaakgodina" id="ntrenutnaakgodina" placeholder=" Trenutna akademska godina" onblur="Pomocni.validirajAkGod(ntrenutnaakgodina.value);" >
+					<div id="nastdiv"> </div>
+			</div>
+
+			<div id="studentform">
+				<input type="text" name="simeiprezime" id="simeiprezime" placeholder=" Ime i prezime" onblur="Pomocni.validirajImeiPrezime(simeiprezime.value);">
+				<input type="text" name="sindeks" id="sindeks" placeholder=" Broj indeksa" onblur="Pomocni.validirajIndex(sindeks.value);">
+				<input type="text" name="sbrojgrupe" id="sbrojgrupe" placeholder=" Broj grupe" onblur="Pomocni.validirajGrupu(parseInt(sbrojgrupe.value));">
+				<input type="text" name="sakgod" id="sakgod" placeholder=" Akademska godina" onblur="Pomocni.validirajAkGod(sakgod.value);">
+				<input type="text" name="spassword1" id="spassword1" placeholder=" Password" onblur="Pomocni.validirajPassword(spassword1.value);">
+				<input type="text" name="spassword2" id="spassword2" placeholder=" Potvrda passworda" onblur="Pomocni.validirajPotvrdu(spassword1.value, spassword2.value);">
+				<input type="text" name="sbitbucketurl" id="sbitbucketurl" placeholder=" Bitbucket URL" onblur="Pomocni.validirajBitbucketURL(sbitbucketurl.value);">
+				<input type="text" name="sbitbucketssh" id="sbitbucketssh" placeholder=" Bitbucket SSH" onblur="Pomocni.validirajBitbucketSSH(sbitbucketssh.value);">
+				<input type="text" name="snazivrepozitorija" id="snazivrepozitorija" placeholder=" Naziv repozitorija" onblur="Pomocni.validirajNazivRepozitorija(null,snazivrepozitorija.value);">
+				<div id="studdiv"> </div>
+			</div>
+
+			<input type="submit" value="Registruj" >
+		
+	</form>
+		
+	</div>
+</div>
+
+<script src="bazaSve.js"></script>
